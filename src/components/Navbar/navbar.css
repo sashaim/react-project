@@ -1,11 +1,13 @@
-/* 
+
 .links{
     display: flex;
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.title{
     text-align: center;
-    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+link{
     justify-content: center;
-} */
+    text-align: center;
+    
+}
