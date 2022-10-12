@@ -14,10 +14,10 @@ const products = [
     { id : '3', name: 'whitetee',category : 'remeras',price:'100', img : '../public/blackhoodie.jpeg',stock : '14', description : 'remera blanca liso'}
 ]
 
-export const getProducts = ()=> {
+export const getProducts = (categoryId)=> {
     return new Promise ((resolve)=>{
         setTimeout(() => {
-            resolve(products)
+            resolve(categoryId ? products.filter(prod => prod.category === categoryId ):products)
         }, 1000);
     })
 }

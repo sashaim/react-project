@@ -8,13 +8,13 @@ const Navbar = ()=>{
         <nav className=' navbar  navbar-expand-lg navbar-light bg-light'>
             <div className='row w-100'>
 
-                <div className='col-4'>
-                    <h1 className='title'>Xbrand</h1> 
+                <div className='col-4 '>
+                    <Link to="/" className='title' ><h1 className='title'>Xbrand</h1></Link> 
                 </div>
                 <div className="col-4 btn-group links" >
-                    <Link to={`/category/buzos`} className="btn btn-primary">Buzos</Link>
-                    <Link to={`/category/buzos`}className="btn btn-primary">Remeras</Link>
-                    <Link to={`/category/buzos`}className="btn btn-primary">Camperas</Link>
+                    <Link to={`/category/buzos`} className="btn  sub-title  btn-primary">Buzos</Link>
+                    <Link to={`/category/remeras`}className="btn sub-title  btn-primary">Remeras</Link>
+                    <Link to={`/category/gorras`}className="btn sub-title btn-primary">Gorras</Link>
 
                 </div>
                 <div className='col-4'>

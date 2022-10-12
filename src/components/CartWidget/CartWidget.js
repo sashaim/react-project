@@ -6,6 +6,7 @@ const CartWidget =() => {
     return(
         <div className="logo conteiner">
             <img src={logo} />
+            10
         </div>
 
     )
