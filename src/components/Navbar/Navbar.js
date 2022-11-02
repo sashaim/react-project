@@ -14,7 +14,7 @@ const Navbar = ()=>{
                 <div className="col-4 btn-group links" >
                     <Link to={`/category/buzos`} className="btn  sub-title  btn-primary">Buzos</Link>
                     <Link to={`/category/remeras`}className="btn sub-title  btn-primary">Remeras</Link>
-                    <Link to={`/category/gorras`}className="btn sub-title btn-primary">Gorras</Link>
+                    <Link to={`/category/cap`}className="btn sub-title btn-primary">Gorras</Link>
 
                 </div>
                 <div className='col-4'>

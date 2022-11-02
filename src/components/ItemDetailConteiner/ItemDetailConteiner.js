@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { getProduct } from '../../asyncMock'
 import { useParams } from 'react-router-dom'
+import ItemCount from '../ItemCount/ItemCount'
 
 
 const ItemDetailConteiner = () => {
@@ -27,12 +28,17 @@ const ItemDetailConteiner = () => {
     
     return (
 
-        <div>
+        <div className='conteiner'>
             <h1>Detalle del producto</h1>
-            <div>
+            <div className='col'>
+                {/* <ItemCount {...product} addItem={addItem}/> */}
                 <h1>{product.name}</h1>
-                <h2>{product.category}</h2>
-                <h3>{product.price}</h3>
+                <picture>
+                    <img src={product.img} alt={product.name} className="ItemImg"/>
+                </picture>
+                <h2>{product.price}</h2>
+                <h3>{product.category}</h3>
+                <ItemCount/>
                 {/* counter */}
             </div>
         </div>
