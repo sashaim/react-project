@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import {getDocs , collection, getDoc, query,where} from  "firebase/firestore"
 import { db } from '../../services/firebase'
 import { NotificationContext } from '../../notification/notification'
+import "./ItemListConteiner.css"
 
 const ItemListConteiner = () => {
     const [products,setProducts]= useState([])
@@ -45,11 +46,16 @@ const ItemListConteiner = () => {
     },[categoryId])
 
     // console.log(products)
-
+    
+    
+    if(loading && true) {
+        return <h1>Cargando productos...</h1>
+    }
+    
 
     return (
-        <div>
-            <h1>Todos nuestros productos</h1>
+        <div className='ItemListContainer'>
+            <h1>{` ${categoryId || 'Todos los productos'}`}</h1>
             <ItemList products={products}/>
 
         </div>
