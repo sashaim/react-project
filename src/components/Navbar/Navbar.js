@@ -12,9 +12,9 @@ const Navbar = ()=>{
                     <Link to="/" className='title' ><h1 className='title'>Xbrand</h1></Link> 
                 </div>
                 <div className="col-4 btn-group links" >
-                    <Link to={`/category/buzos`} className="btn  sub-title  btn-primary">Buzos</Link>
-                    <Link to={`/category/remeras`}className="btn sub-title  btn-primary">Remeras</Link>
-                    <Link to={`/category/cap`}className="btn sub-title btn-primary">Gorras</Link>
+                    <Link to={`/category/hoodies`} className="btn  sub-title  btn-primary">Buzos</Link>
+                    <Link to={`/category/shirts`}className="btn sub-title  btn-primary">Remeras</Link>
+                    <Link to={`/category/caps`}className="btn sub-title btn-primary">Gorras</Link>
 
                 </div>
                 <div className='col-4'>
