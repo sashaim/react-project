@@ -27,9 +27,7 @@ function App() {
             <Route path='*' />
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
-            {/* <Route path='checkout' element /> */}
           </Routes>
-          {/* <ItemCount/> */}
         </BrowserRouter>
       </CartContextProvider>
     </NotificationProvider>
