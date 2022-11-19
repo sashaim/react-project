@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 // import { getProduct } from '../../asyncMock'
 import { useParams } from 'react-router-dom'
-// import ItemCount from '../ItemCount/ItemCount'
 import { getDoc ,doc } from 'firebase/firestore'
 import { db } from '../../services/firebase'
 import ItemDetail from '../ItemDetail/ItemDetail'
@@ -20,9 +19,8 @@ const ItemDetailConteiner = ({setCart}) => {
         getDoc(docRef).then(doc => {
             const data =doc.data()
             const productAdapted = {id: doc.id, ...data}
-            console.log(productId)
+
             setProduct(productAdapted)
-            console.log(productAdapted)
 
         }).catch(error => {
             console.log(error)
@@ -30,14 +28,11 @@ const ItemDetailConteiner = ({setCart}) => {
             setLoading(false)
         })
 
-        // getProduct(productId).then(product =>{
-        //     setProducts(product)
-        // }).finally(()=>{
-        //     setLoading(false)
-        // })
+
     },[productId])
 
-    // console.log(setProduct)
+
+    
 
     if (loading){
         return (

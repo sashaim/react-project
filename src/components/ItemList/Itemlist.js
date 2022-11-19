@@ -6,7 +6,6 @@ import "./ItemList.css"
 
 const ItemList = (({products})=>{
     return(
-        // <div className="col"> 
             <div className="ItemList row">
                 {products.map(prod => (
                     <Item key={prod.id} prod={prod}/>

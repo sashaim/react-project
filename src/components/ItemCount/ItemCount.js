@@ -4,7 +4,7 @@ import { useState } from "react"
 
 // en el stock deberia poner una props con el valor del detalle de cada item
 // este deberia estar dentro del itemdetailconteiner
-const ItemCount = ({stock = 100,intial = 1,onAdd})=>{
+const ItemCount = ({stock = 0,intial = 1,onAdd})=>{
 
     const[quantity,setQuantity]=useState(intial)
 

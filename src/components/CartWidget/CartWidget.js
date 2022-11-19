@@ -12,10 +12,7 @@ const CartWidget =() => {
     const totalQuantity = getTotalQuantity()
 
     return(
-        // <div className="logo conteiner">
-        //     <img src={logo} />
-        //     10
-        // </div>
+
         <Link to='/cart' className="CartWidget logo">
             <img src={logo} alt='cart-widget' className='CartImg'/>
             {totalQuantity}

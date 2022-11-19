@@ -1,4 +1,4 @@
-// import './Notification.css'
+import './notification.css'
 import { createContext, useState } from "react"
 
 const Notification = ({ msg, severity }) => {
@@ -13,7 +13,7 @@ const Notification = ({ msg, severity }) => {
 
     return (
         <div className={severity === 'success' ? 'greenClass' : 'redClass'} style={notificationStyles}>
-        {msg}
+            {msg}
         </div>
     )
 }

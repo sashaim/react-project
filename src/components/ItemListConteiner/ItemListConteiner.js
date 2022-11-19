@@ -21,7 +21,7 @@ const ItemListConteiner = () => {
         const collectionRef =  categoryId
             ? query(collection(db,'products'), where('category','==',categoryId))
             :collection (db,'products')
-        // const collectionRef = collection (db,'products')
+
 
         getDocs(collectionRef).then(response =>{
             console.log(response)
@@ -45,7 +45,7 @@ const ItemListConteiner = () => {
         // })
     },[categoryId])
 
-    // console.log(products)
+
     
     
     if(loading && true) {

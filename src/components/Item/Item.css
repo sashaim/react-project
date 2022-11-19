@@ -1,20 +1,28 @@
-.CardItem{
-    width: 250px;
+.CardItem {
+    width: 200px;
     padding: 30px;
     margin: 30px;
-    border-radius: 2px;
-    border-color: black;
-    background-color: whitesmoke;
+    font-size: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
 }
 
-.Header{
+.Header {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 25px;
 }
 
-.ItemImg{
-    width: 200px;
-    height: 200px;
+.ItemHeader {
+    display: flex;
+    justify-content: center;
+}
+
+
+.ItemImg {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     object-position: center;
 }

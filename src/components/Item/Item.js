@@ -4,7 +4,7 @@ import "./Item.css"
 
 const Item = ({prod})=>{
     return(
-        <article className="CardItem">
+        <article className="CardItem container row ">
             <header className="Header">
                 <h2 className="ItemHeader">{prod.name}</h2>
             </header>
@@ -16,7 +16,7 @@ const Item = ({prod})=>{
                     Precio : ${prod.price}
                 </p>
             </section>
-            <footer className="ItemFooter">
+            <footer>
 
                 <Link to={`/detail/${prod.id}`} className="Option btn btn-dark">Mostrar Detalle</Link>
             </footer>
