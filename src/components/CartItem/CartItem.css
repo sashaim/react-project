@@ -1,0 +1,65 @@
+/* .CardCartItem{
+    border: 4px;
+    color: black;
+
+
+    display:inline-table;
+    padding: 20px;
+
+}
+
+article{
+    border: 10px;
+    color: black;
+}
+
+.HeaderCartItem{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+}
+
+.ItemHeaderCartItem{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+.ContainerItemCartItem{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+} */
+
+.CardCartItem {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 20px;
+    margin: 30px;
+    font-size: 20px;
+    background-color: rgb(30, 160, 235);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+.InfoCartItem {
+    margin-right: 50px;
+}
+
+.ContainerItemCartItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ItemHeaderCartItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.InfoCartItem {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.ItemFooterCartItem {
+    display: flex;
+}
